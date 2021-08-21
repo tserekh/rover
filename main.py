@@ -242,7 +242,7 @@ if __name__=='__main__':
             finish_point = Point(f_row, f_col)
             order = Order(start_point, finish_point, t * sec_in_min)
             order.possible_income = 0
-            if (city_graph is None) or (get_distance(start_point, finish_point) < 40):
+            if (city_graph is None) or (get_distance(start_point, finish_point) < 70):
                 orders_list.append(order)
 
         if rover.empty:
